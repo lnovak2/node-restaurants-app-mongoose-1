@@ -95,7 +95,6 @@ app.put('/restaurants/:id', (req, res) => {
 
   // we only support a subset of fields being updateable.
   // if the user sent over any of the updatableFields, we udpate those values
-  // in document
   const toUpdate = {};
   const updateableFields = ['name', 'borough', 'cuisine', 'address'];
 
